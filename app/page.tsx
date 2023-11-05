@@ -1,3 +1,8 @@
+"use client";
+
+import React from "react";
+import { CaretLeft, CaretRight } from "phosphor-react";
+
 export default function Home() {
   return (
     <div
@@ -14,7 +19,7 @@ export default function Home() {
         text-center
         items-center
         justify-center
-       bg-gradient-to-r from-cyan-300 to-blue-300
+        bg-gradient-to-r from-cyan-300 to-blue-300
         w-80
         h-96
         m-auto
@@ -27,9 +32,26 @@ export default function Home() {
         <div className="pic">PICTURE</div>
         <div className="title">title</div>
         <div className="review">review</div>
-        <div className="btn-container">
-          <button></button>
-          <button></button>
+        <div
+          className="btn-container
+          flex-1
+          justify-items-center
+          align-items-center
+          mt-auto
+        "
+        >
+          <CaretLeft
+            color="indigo"
+            size={32}
+            className=" m-5
+          "
+          />
+          <CaretRight
+            color="indigo"
+            size={32}
+            className="m-5
+          "
+          />
         </div>
       </div>
     </div>
